@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="landing-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="icon" href="img/alan-front.png" type="image/x-icon">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+  <title id="page_title">Alan | Desarrollador Fullstack & UX</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="header_title">Alan – Desarrollador Fullstack & UX</h1>
+    <p id="header_subtitle">Creador de herramientas digitales, mailing para artistas y soluciones web efectivas</p>
+    <div class="botones-idiomas">
+      <button class="btn-lang" onclick="setLanguage('es')">ES</button>
+      <button class="btn-lang" onclick="setLanguage('en')">EN</button>
+      <button class="btn-lang" onclick="setLanguage('fr')">FR</button>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2 id="about_title">Sobre mí</h2>
+      <p id="about_text">Texto sobre mí...</p>
+    </section>
+
+    <section>
+      <h2 id="projects_title">Proyectos</h2>
+      <div class="project">
+        <h3 id="project_1_title">App Mailing IA</h3>
+        <p id="project_1_desc">Descripción app mailing...</p>
+        <a id="project_1_link" href="#" target="_blank">Ver el código</a>
+      </div>     
+
+      <div class="project">
+        <h3 id="project_2_title">Portafolio UX</h3>
+        <p id="project_2_desc">Descripción portafolio...</p>
+        <a id="project_2_link" href="#" target="_blank">Ver los proyectos</a>
+      </div>
+
+      <div class="project">
+        <h3 id="project_3_title">app 2</h3>
+        <p id="project_3_desc">Descripción portafolio...</p>
+        <a id="project_3_link" href="#" target="_blank">Ver los proyectos</a>
+      </div>
+    </section>
+
+<section>
+  <h2 id="contact_title">Contacto</h2>
+
+  <p>
+    <a href="https://github.com/Alan-front" target="_blank">
+      <i class="fab fa-github"></i>&nbsp;Alan-front
+    </a>
+  </p>
+
+  <p>
+    <a href="https://www.behance.net/amiguelperez" target="_blank">
+      <i class="fab fa-behance"></i>&nbsp;amiguelperez
+    </a>
+  </p>
+
+  <p>
+    <a href="" target="_blank">
+      <i class="fab fa-linkedin"></i>&nbsp;Perfil
+    </a>
+  </p>
+</section>
+
+
+
+  </main>
+
+<footer>
+  © <span id="year"></span> Alan. <span id="footer"></span>
+</footer>
+
+
+
+
+  <script>
+   async function setLanguage(lang) {
+  try {
+    const res = await fetch(`lang/${lang}.json`);
+    const data = await res.json();
+
+    document.title = data.title;
+    document.getElementById('page_title').textContent = data.title;
+    document.getElementById('header_title').textContent = data.header_title;
+    document.getElementById('header_subtitle').textContent = data.header_subtitle;
+    document.getElementById('about_title').textContent = data.about_title;
+    document.getElementById('about_text').textContent = data.about_text;
+    document.getElementById('projects_title').textContent = data.projects_title;
+    document.getElementById('project_1_title').textContent = data.project_1_title;
+    document.getElementById('project_1_desc').textContent = data.project_1_desc;
+    document.getElementById('project_1_link').textContent = data.project_1_link;
+    document.getElementById('project_2_title').textContent = data.project_2_title;
+    document.getElementById('project_2_desc').textContent = data.project_2_desc;
+    document.getElementById('project_2_link').textContent = data.project_2_link;
+    document.getElementById('project_3_title').textContent = data.project_3_title;
+    document.getElementById('project_3_desc').textContent = data.project_3_desc;
+    document.getElementById('project_3_link').textContent = data.project_3_link;
+    document.getElementById('contact_title').textContent = data.contact_title;
+    document.getElementById('footer').textContent = data.footer;
+  } catch (error) {
+    console.error('Error loading language:', error);
+  }
+}
+
+// Idioma por defecto
+setLanguage('es');
+
+document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
