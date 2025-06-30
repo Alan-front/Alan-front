@@ -17,11 +17,12 @@
    
   </style>
 </head>
-<body>
-  <header>
-    <h1 id="header_title">Alan – Desarrollador Fullstack & UX</h1>
-    <p id="header_subtitle">Creador de herramientas digitales, mailing para artistas y soluciones web efectivas</p>
-    <div class="botones-idiomas">
+<body class="container-div">
+  <header class="container-div">
+    <h1 id="name" class="modo-texto">Alan </h1>
+    <h1 id="header_title" class="modo-texto"> – Desarrollador Fullstack & UX</h1>
+    <p id="header_subtitle" class="modo-texto">Creador de herramientas digitales, mailing para artistas y soluciones web efectivas</p>
+    <div class="botones-idiomas litContainer">
       <button class="btn-lang" onclick="setLanguage('es')">ES</button>
       <button class="btn-lang" onclick="setLanguage('en')">EN</button>
       <button class="btn-lang" onclick="setLanguage('fr')">FR</button>
@@ -29,49 +30,49 @@
   </header>
 
   <main>
-    <section>
-      <h2 id="about_title">Sobre mí</h2>
-      <p id="about_text">Texto sobre mí...</p>
+    <section class="project container-div">
+      <h2 id="about_title" class="modo-texto">Sobre mí</h2>
+      <p id="about_text" class="modo-texto">Texto sobre mí...</p>
     </section>
 
-    <section>
-      <h2 id="projects_title">Proyectos</h2>
-      <div class="project">
-        <h3 id="project_1_title">App Mailing IA</h3>
-        <p id="project_1_desc">Descripción app mailing...</p>
-        <a id="project_1_link" href="https://github.com/Alan-front/echo-mailer" target="_blank">Ver el código</a>
+    <section class="container-div">
+      <h2 id="projects_title" class="modo-texto">Proyectos</h2>
+      <div class="project container-div">
+        <h3 id="project_1_title" class="modo-texto">App Mailing IA</h3>
+        <p id="project_1_desc" class="modo-texto">Descripción app mailing...</p>
+        <a id="project_1_link" class="modo-enlace" href="https://github.com/Alan-front/echo-mailer" target="_blank">Ver el código</a>
       </div>     
 
-      <div class="project">
-        <h3 id="project_2_title">Portafolio UX</h3>
-        <p id="project_2_desc">Descripción portafolio...</p>
-        <a id="project_2_link" href="#" target="_blank">Ver los proyectos</a>
+      <div class="project container-div">
+        <h3 id="project_2_title" class="modo-texto">Portafolio UX</h3>
+        <p id="project_2_desc"class="modo-texto">Descripción portafolio...</p>
+        <a id="project_2_link" class="modo-enlace" href="#" target="_blank">Ver los proyectos</a>
       </div>
 
-      <div class="project">
-        <h3 id="project_3_title">app 2</h3>
-        <p id="project_3_desc">Descripción portafolio...</p>
-        <a id="project_3_link" href="#" target="_blank">Ver los proyectos</a>
+      <div class="project container-div">
+        <h3 id="project_3_title" class="modo-texto">app 2</h3>
+        <p id="project_3_desc" class="modo-texto">Descripción portafolio...</p>
+        <a id="project_3_link" class="modo-enlace" href="#" target="_blank">Ver los proyectos</a>
       </div>
     </section>
 
-<section class="contacto">
-  <h2 id="contact_title">Contacto</h2>
+<section class="project contacto container-div">
+  <h2 id="contact_title" class="modo-texto">Contacto</h2>
 
   <p>
-    <a href="https://github.com/Alan-front" target="_blank">
+    <a href="https://github.com/Alan-front" class="modo-texto" target="_blank">
       <i class="fab fa-github"></i>&nbsp;Alan-front
     </a>
   </p>
 
   <p>
-    <a href="https://www.behance.net/amiguelperez" target="_blank">
+    <a href="https://www.behance.net/amiguelperez" class="modo-texto" target="_blank">
       <i class="fab fa-behance"></i>&nbsp;amiguelperez
     </a>
   </p>
 
   <p>
-    <a href="" target="_blank">
+    <a href="" target="_blank" class="modo-texto">
       <i class="fab fa-linkedin"></i>&nbsp;Perfil
     </a>
   </p>
@@ -80,6 +81,12 @@
 
 
   </main>
+
+  <div class="modeDark">
+    <button id="toggleDarkMode" class="btn-dark" onclick="toggleDarkMode()" aria-label="Alternar modo oscuro">
+    ☀️ Modo claro
+  </button>
+  </div>
 
 <footer>
   © <span id="year"></span> Alan. <span id="footer"></span>
@@ -119,6 +126,50 @@
 
 // Idioma por defecto
 setLanguage('es');
+
+
+function toggleDarkMode() {
+
+  //document.header.classList.toggle("litContainer");
+
+  document.querySelectorAll('.container-div').forEach(el => {
+  el.classList.toggle('lightModeDivs');
+});  
+  
+  document.querySelectorAll('.modo-texto').forEach(el => {
+  el.classList.toggle('lightModeTexts');
+});
+
+document.querySelectorAll('.btn-lang').forEach(el => {
+  el.classList.toggle('light-btn');
+});
+
+
+document.querySelectorAll('.modo-enlace').forEach(el => {
+  el.classList.toggle('light-enlace');
+});
+
+// Toggle del botón de modo oscuro
+const toggleBtn = document.getElementById('toggleDarkMode');
+toggleBtn.classList.toggle('btn-light');
+
+// Debug del texto
+console.log('Antes del cambio:', toggleBtn.textContent);
+console.log('Tiene light-btn:', toggleBtn.classList.contains('btn-light'));
+
+// Cambiar el texto del botón
+if (toggleBtn.classList.contains('btn-light')) {
+  toggleBtn.textContent = '🌙 Modo oscuro';
+  console.log('Cambiando a: 🌙 Modo oscuro');
+} else {
+  toggleBtn.textContent = '☀️ Modo claro';
+  console.log('Cambiando a: ☀️ Modo claro');
+}
+
+console.log('Después del cambio:', toggleBtn.textContent);
+}
+
+
 
 document.getElementById('year').textContent = new Date().getFullYear();
   </script>

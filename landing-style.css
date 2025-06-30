@@ -5,8 +5,15 @@
   --color-subtitulos: rgb(170, 222, 252);
   --color-primary: #38bdf8;
   --color-muted: #64748b;
-  --text-parrafos:"Roboto Serif", serif;;
+  --text-parrafos:"Roboto Serif", serif;
 }
+
+
+
+.lightModeTexts{
+color: var(--color-bg);
+}
+
 
 body {
   margin: 0;
@@ -20,6 +27,12 @@ header {
   background: linear-gradient(135deg,  #1a2941, #0f172a);
   padding: 2rem;
   text-align: center;
+
+}
+
+.lightModeDivs{
+background-color: #f8f8ff !important;
+background: linear-gradient(135deg,  #f0f0f5 , #d2d2fd );
 }
 
 main {
@@ -30,6 +43,23 @@ main {
 
 .botones-idiomas{
   margin-top: 30px;
+}
+
+.modeDark{
+  position: fixed;
+  top: 20px;
+  right: 50px;
+}
+
+.light-btn{
+  background: #f8f8ffd7 !important;
+  color: var(--color-bg) !important;
+  box-shadow: 0 4px 15px rgba(10, 10, 17, 0.322) !important;
+  text-shadow: 0 1px 1px #1a29415d;
+}
+
+.light-enlace{
+  color: rgba(20, 34, 224, 0.616) !important;
 }
 
 section {
@@ -44,6 +74,23 @@ h2 {
 
 h3{
     color: var(--color-subtitulos);
+  }
+
+  .btn-dark{
+    background-color: #1a2941;
+    border-radius: 50px;
+    color: aqua;
+    padding: 10px 20px;
+    border: 1px solid rgb(77, 77, 80);
+    box-shadow: 0px 1px 2px var(--color-primary) !important;
+     transition: all 0.3s ease;
+  }
+
+  .btn-light{
+    background-color: var(--color-text);
+  color:var(--color-bg) !important;
+  /* border: 1px solid green !important; */
+  box-shadow: 1px 2px 4px var(--color-bg)!important;
   }
   
 .project {
@@ -92,6 +139,8 @@ footer {
   transform: translateY(0);
 }
 
+
+
 p, footer{
   font-family:  "Source Serif 4", serif;
   font-size: 1em;
@@ -118,6 +167,31 @@ p, footer{
 
     
   }
+
+  .modeDark{
+    top: 10px;
+    right: 10px;
+  }
+
+  #toggleDarkMode {
+    padding: 8px 10px;
+    font-size: .9rem;
+  }
+
+   #toggleDarkMode:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    
+
+  }
+  
+  #toggleDarkMode.light-btn:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    
+
+  }
+
 }
 
 /* celular */
@@ -167,6 +241,42 @@ p, footer{
   footer{
     margin-top: -12px;
     /* border: 1px solid rgb(10, 211, 144); */
+  }
+
+  .modeDark{
+    top: 10px;
+    right: 10px;
+  }
+
+  #toggleDarkMode {
+    font-size: 0; 
+    width: 50px;  
+    height: 50px;
+    padding: 1px;
+  }
+  
+  #toggleDarkMode::before {
+    font-size: 1.5rem; 
+    content: '☀️'; 
+  }
+  
+  #toggleDarkMode.btn-light::before {
+    content: '🌙';
+  }
+
+
+   #toggleDarkMode:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    
+
+  }
+  
+  #toggleDarkMode.light-btn:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    
+
   }
 }
 
