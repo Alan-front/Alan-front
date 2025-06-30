@@ -32,7 +32,7 @@ header {
 
 .lightModeDivs{
 background-color: #f8f8ff !important;
-background: linear-gradient(135deg,  #f0f0f5 , #d2d2fd );
+background: linear-gradient(135deg,  #f0f0f5 , #7676c0 );
 }
 
 main {
@@ -87,7 +87,8 @@ h3{
   }
 
   .btn-light{
-    background-color: var(--color-text);
+    background-color: rgba(0, 0, 255, 0);
+
   color:var(--color-bg) !important;
   /* border: 1px solid green !important; */
   box-shadow: 1px 2px 4px var(--color-bg)!important;
@@ -278,6 +279,7 @@ p, footer{
     
 
   }
+
 }
 
  /* smartwatch */
@@ -364,6 +366,9 @@ p, footer{
         background: rgba(255, 255, 255, 0.3);
         color: white;
       }
+
+
+    
       
       footer {
         padding: 0.75rem;
