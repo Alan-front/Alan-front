@@ -406,10 +406,11 @@ p, footer{
 }
 
 .tags-about span{
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   line-height: 1.2rem;
   margin-top: 30px;
   border: 1px solid var(--color-muted);
+  padding: 1rem 2rem;
 }
 
 /* responsive  */
