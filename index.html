@@ -139,7 +139,8 @@
 
   <div class="modeDark">
     <button id="toggleDarkMode" class="btn-dark" onclick="toggleDarkMode()" aria-label="Alternar modo oscuro">
-    ☀️ Modo claro
+    <!-- <span id="dark_mode_text"></span>
+  <span id="light_mode_text" style="display: none;"></span> -->
   </button>
   </div>
 
@@ -151,10 +152,14 @@
 
 
   <script>
-   async function setLanguage(lang) {
+   let currentLanguageData = {};
+
+async function setLanguage(lang) {
   try {
     const res = await fetch(`lang/${lang}.json`);
     const data = await res.json();
+    
+    currentLanguageData = data;
 
     document.title = data.title;
     document.getElementById('page_title').textContent = data.title;
@@ -174,71 +179,63 @@
     document.getElementById('project_3_link').textContent = data.project_3_link;
     document.getElementById('contact_title').textContent = data.contact_title;
     document.getElementById('footer').textContent = data.footer;
+    
+    updateButtonText();
+    
   } catch (error) {
     console.error('Error loading language:', error);
   }
 }
 
-// Idioma por defecto
-setLanguage('es');
-
+function updateButtonText() {
+  const toggleBtn = document.getElementById('toggleDarkMode');
+  
+  if (toggleBtn.classList.contains('btn-light')) {
+    toggleBtn.textContent = currentLanguageData.dark_mode_text;
+  } else {
+    toggleBtn.textContent = currentLanguageData.light_mode_text;
+  }
+}
 
 function toggleDarkMode() {
-
-  //document.header.classList.toggle("litContainer");
-
   document.querySelectorAll('.container-div').forEach(el => {
-  el.classList.toggle('lightModeDivs');
-});  
+    el.classList.toggle('lightModeDivs');
+  });  
 
   const titulo = document.getElementById('name');
   titulo.classList.toggle('titulo-mclaro');
 
   const subtitulo = document.getElementById('header_title');
-subtitulo.classList.toggle('sub-tit-mclaro');
+  subtitulo.classList.toggle('sub-tit-mclaro');
 
-const descripcion = document.getElementById('header_subtitle');
-descripcion.classList.toggle('descrip-mclaro');
+  const descripcion = document.getElementById('header_subtitle');
+  descripcion.classList.toggle('descrip-mclaro');
   
   document.querySelectorAll('.modo-texto').forEach(el => {
-  el.classList.toggle('lightModeTexts');
-});
+    el.classList.toggle('lightModeTexts');
+  });
 
-const scrollAnim = document.querySelector(".scroll-indicator");
-scrollAnim.classList.toggle('indicator-mclaro');
+  const scrollAnim = document.querySelector(".scroll-indicator");
+  scrollAnim.classList.toggle('indicator-mclaro');
 
-document.querySelectorAll('.btn-lang').forEach(el => {
-  el.classList.toggle('light-btn');
-});
+  document.querySelectorAll('.btn-lang').forEach(el => {
+    el.classList.toggle('light-btn');
+  });
 
+  document.querySelectorAll('.modo-enlace').forEach(el => {
+    el.classList.toggle('light-enlace');
+  });
 
-document.querySelectorAll('.modo-enlace').forEach(el => {
-  el.classList.toggle('light-enlace');
-});
+  const toggleBtn = document.getElementById('toggleDarkMode');
+  toggleBtn.classList.toggle('btn-light');
 
-// toggle del boton
-const toggleBtn = document.getElementById('toggleDarkMode');
-toggleBtn.classList.toggle('btn-light');
-
-// + debug
-console.log('Antes del cambio:', toggleBtn.textContent);
-console.log('Tiene light-btn:', toggleBtn.classList.contains('btn-light'));
-
-// cambiar texto modo claro
-if (toggleBtn.classList.contains('btn-light')) {
-  toggleBtn.textContent = '🌙 Modo oscuro';
-  console.log('Cambiando a: 🌙 Modo oscuro');
-} else {
-  toggleBtn.textContent = '☀️ Modo claro';
-  console.log('Cambiando a: ☀️ Modo claro');
+  updateButtonText();
 }
 
-console.log('Después del cambio:', toggleBtn.textContent);
-}
-
-
+setLanguage('es');
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
   </script>
 
 

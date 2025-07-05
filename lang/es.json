@@ -19,5 +19,7 @@
   "email": "Email: alan@email.com",
   "github": "GitHub",
   "linkedin": "Perfil",
-  "footer": "Todos los derechos reservados."
+  "footer": "Todos los derechos reservados.",
+  "light_mode_text": "☀️ Modo claro",
+  "dark_mode_text": "🌙 Modo oscuro"
 }
