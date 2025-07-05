@@ -1,11 +1,13 @@
 :root {
   --color-bg: #0f172a;
+
   --color-header: #1e293b;
+
   --color-text: #dfeefc;
   --color-subtitulos: rgb(170, 222, 252);
   --color-primary: #38bdf8;
   --color-muted: #64748b;
-  --text-parrafos:"Roboto Serif", serif;
+  --text-parrafos: "Inter", sans-serif; 
 }
 
 
@@ -17,18 +19,122 @@ color: var(--color-bg);
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif; 
   background: var(--color-bg);
   color: var(--color-text);
+  line-height: 1.6;
+}
+
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 25% 25%, rgba(56, 189, 248, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(56, 189, 248, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 header {
-  /* background: var(--color-header); */
-  background: linear-gradient(135deg,  #1a2941, #0f172a);
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-header) 100%);
+  /* background: #040b1b; */
   padding: 2rem;
   text-align: center;
-
+  /* border-bottom: 1px solid #38bdf8; */
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  position: relative; 
 }
+
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+#name {
+  font-size: clamp(4rem, 8vw, 7rem); 
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem; 
+  background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0; 
+  animation: slideUp 1s ease-out 0.2s forwards; 
+}
+
+.titulo-mclaro{
+  background: linear-gradient(135deg, #1a365d 0%, #304364 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.sub-tit-mclaro{
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.descrip-mclaro{
+  background: linear-gradient(135deg, #4a5568 0%, #718096 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+
+#header_title {
+  font-size: clamp(1.5rem, 3vw, 2.5rem); 
+  font-weight: 300; 
+  color: var(--color-primary);
+  margin-bottom: 1rem; 
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--color-subtitulos) 0%, #a0a0a0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0; 
+  animation: slideUp 1s ease-out 0.4s forwards; 
+}
+
+#header_subtitle {
+  font-size: clamp(1rem, 2vw, 1.2rem); 
+  color: var(--color-muted);
+  max-width: 600px; 
+  margin: 0 auto 1.5rem; 
+  opacity: 0; 
+  animation: slideUp 1s ease-out 0.6s forwards; 
+}
+
+.botones-idiomas {
+  margin-top: 1rem; 
+  margin-bottom: 2rem; 
+  opacity: 0; 
+  animation: slideUp 1s ease-out 0.8s forwards; 
+}
+
+#header_title,
+#header_subtitle {
+  
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 
 .lightModeDivs{
 background-color: #f8f8ff !important;
@@ -41,9 +147,7 @@ main {
   margin: auto;
 }
 
-.botones-idiomas{
-  margin-top: 30px;
-}
+
 
 .modeDark{
   position: fixed;
@@ -51,11 +155,16 @@ main {
   right: 50px;
 }
 
+    /* botones en modo claro */
 .light-btn{
-  background: #f8f8ffd7 !important;
+  background: #f8f8ff59 !important;
   color: var(--color-bg) !important;
   box-shadow: 0 4px 15px rgba(10, 10, 17, 0.322) !important;
-  text-shadow: 0 1px 1px #1a29415d;
+  
+}
+
+.light-btn:hover{
+  background: #f8f8ffd3 !important;
 }
 
 .light-enlace{
@@ -149,6 +258,63 @@ p, footer{
 
 
 
+/* scroll indicator*/
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 1rem; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--color-primary), transparent);
+  opacity: 0;
+  animation: slideUp 1s ease-out 1s forwards; 
+  border-radius: 2px;
+}
+
+.scroll-indicator::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 3px; 
+  height: 20px;
+  background: var(--color-primary);
+  border-radius: 2px;
+  animation: scrollDot 2s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.5); 
+}
+
+.indicator-mclaro{
+  background: var(--color-bg);
+}
+
+.indicator-mclaro::after{
+  background: var(--color-bg);
+  box-shadow: none;
+}
+
+
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    @keyframes scrollDot {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(40px); }
+    }
+
+
+
 /* responsive  */
 
 /* tablets */
@@ -198,7 +364,17 @@ p, footer{
 /* celular */
 @media (max-width: 480px) {
   header {
-    padding: 1rem;
+    padding-bottom50px: .5rem;
+    
+  }
+
+  .hero-content{
+    padding-block: 1px;
+  }
+
+  #name{
+    margin: 5px;
+
   }
   
   main {
@@ -296,14 +472,19 @@ p, footer{
         font-size: 14px;
         box-sizing: border-box;
       }
+
+      h1#name{
+        line-height: 1.2;
+      }
       
       header {
-        padding: 0.25rem;
+        padding: 1.5rem;
         box-sizing: border-box;
       }
       
       header h1 {
-        font-size: 1.5em;
+        font-size: .7em;
+        margin-bottom: 1px;
       }
       
       main {
@@ -376,4 +557,27 @@ p, footer{
         
         
       }
+
+      .scroll-indicator{
+  display: none;
+  position: fixed;
+  z-index: 500;
+  top: 40%;
+  left: 25px;
+  /* transform: translateY(-80%); */
+}
     }
+
+
+    .reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+

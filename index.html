@@ -8,6 +8,7 @@
 
   <link rel="icon" href="img/alan-front.png" type="image/x-icon">
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,24 +19,30 @@
   </style>
 </head>
 <body class="container-div">
-  <header class="container-div">
-    <h1 id="name" class="modo-texto">Alan Perez</h1>
-    <h1 id="header_title" class="modo-texto"> – Desarrollador Fullstack & UX</h1>
-    <p id="header_subtitle" class="modo-texto">Creador de herramientas digitales, mailing para artistas y soluciones web efectivas</p>
+
+<header class="container-div">
+  <div class="hero-content">
+    <h1 id="name" class="modo-texto reveal">Alan Perez</h1>
+    <h1 id="header_title" class="modo-texto reveal">— Desarrollador Fullstack & UX</h1>
+    <p id="header_subtitle" class="modo-texto reveal">Creador de herramientas digitales, mailing para artistas y soluciones web efectivas</p>
+    
     <div class="botones-idiomas litContainer">
       <button class="btn-lang" onclick="setLanguage('es')">ES</button>
       <button class="btn-lang" onclick="setLanguage('en')">EN</button>
       <button class="btn-lang" onclick="setLanguage('fr')">FR</button>
     </div>
-  </header>
+  </div>
+  
+  <div class="scroll-indicator"></div>
+</header>
 
   <main>
-    <section class="project container-div">
+    <section class="project container-div reveal">
       <h2 id="about_title" class="modo-texto">Sobre mí</h2>
       <p id="about_text" class="modo-texto">Texto sobre mí...</p>
     </section>
 
-    <section class="container-div">
+    <section class="container-div reveal">
       <h2 id="projects_title" class="modo-texto">Proyectos</h2>
       <div class="project container-div">
         <h3 id="project_1_title" class="modo-texto">App Mailing IA</h3>
@@ -43,20 +50,20 @@
         <a id="project_1_link" class="modo-enlace" href="https://github.com/Alan-front/echo-mailer" target="_blank">Ver el código</a>
       </div>     
 
-      <div class="project container-div">
+      <div class="project container-div reveal">
         <h3 id="project_2_title" class="modo-texto">Portafolio UX</h3>
         <p id="project_2_desc"class="modo-texto">Descripción portafolio...</p>
         <a id="project_2_link" class="modo-enlace" href="#" target="_blank">Ver los proyectos</a>
       </div>
 
-      <div class="project container-div">
+      <div class="project container-div reveal">
         <h3 id="project_3_title" class="modo-texto">app 2</h3>
         <p id="project_3_desc" class="modo-texto">Descripción portafolio...</p>
         <a id="project_3_link" class="modo-enlace" href="#" target="_blank">Ver los proyectos</a>
       </div>
     </section>
 
-<section class="project contacto container-div">
+<section class="project contacto container-div reveal">
   <h2 id="contact_title" class="modo-texto">Contacto</h2>
 
   <p>
@@ -135,10 +142,22 @@ function toggleDarkMode() {
   document.querySelectorAll('.container-div').forEach(el => {
   el.classList.toggle('lightModeDivs');
 });  
+
+  const titulo = document.getElementById('name');
+  titulo.classList.toggle('titulo-mclaro');
+
+  const subtitulo = document.getElementById('header_title');
+subtitulo.classList.toggle('sub-tit-mclaro');
+
+const descripcion = document.getElementById('header_subtitle');
+descripcion.classList.toggle('descrip-mclaro');
   
   document.querySelectorAll('.modo-texto').forEach(el => {
   el.classList.toggle('lightModeTexts');
 });
+
+const scrollAnim = document.querySelector(".scroll-indicator");
+scrollAnim.classList.toggle('indicator-mclaro');
 
 document.querySelectorAll('.btn-lang').forEach(el => {
   el.classList.toggle('light-btn');
@@ -149,15 +168,15 @@ document.querySelectorAll('.modo-enlace').forEach(el => {
   el.classList.toggle('light-enlace');
 });
 
-// Toggle del botón de modo oscuro
+// toggle del boton
 const toggleBtn = document.getElementById('toggleDarkMode');
 toggleBtn.classList.toggle('btn-light');
 
-// Debug del texto
+// + debug
 console.log('Antes del cambio:', toggleBtn.textContent);
 console.log('Tiene light-btn:', toggleBtn.classList.contains('btn-light'));
 
-// Cambiar el texto del botón
+// cambiar texto modo claro
 if (toggleBtn.classList.contains('btn-light')) {
   toggleBtn.textContent = '🌙 Modo oscuro';
   console.log('Cambiando a: 🌙 Modo oscuro');
@@ -173,5 +192,20 @@ console.log('Después del cambio:', toggleBtn.textContent);
 
 document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
+
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
 </body>
 </html>
