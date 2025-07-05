@@ -177,8 +177,10 @@ section {
 
 h2 {
   color: var(--color-primary);
-  border-bottom: 2px solid var(--color-primary);
+  border-bottom: 4px solid var(--color-primary);
   padding-bottom: 0.5rem;
+  display: inline-block;
+  width: auto;
 }
 
 h3{
@@ -202,12 +204,45 @@ h3{
   /* border: 1px solid green !important; */
   box-shadow: 1px 2px 4px var(--color-bg)!important;
   }
+
+  .about-me{
+    
+    height: fit-content;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  h2#about_title{
+    color: rgb(221, 223, 226);
+    font-size: 4rem;
+    
+  }
+
+   p#about_text{
+    font-size: 1.3rem;
+    color: #b8bdc5;
+  }
   
 .project {
-  background: var(--color-header);
+  border: 1px solid var(--color-muted);
+  box-shadow: 2px 2px 2px var(--color-primary);
+  background: rgba(41, 41, 97, 0);
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 1rem;
+  transition: all 0.5s ease;
+  /* display: flex;
+  flex-direction: column;
+  gap: 1rem; */
+}
+
+.project:hover{
+  border-color: 2px solid var(--color-primary);
+      color: var(--color-primary);
+      background:linear-gradient(135deg, rgba(56, 191, 248, 0.1) 0%, rgba(56, 191, 248, 0) 100%);
+      transform: translateY(-2px);
+      box-shadow: 2px 2px 15px var(--color-primary);
+      transform: translateY(-10px);
 }
 
 a {
@@ -313,7 +348,69 @@ p, footer{
       50% { transform: translateY(40px); }
     }
 
+    .project-footer {
+      border-top: 1px solid var(--color-muted);
+      padding-top: 1rem;
+      margin: 1rem -1rem 0 -1rem; /* ← Agrega esto */
+      padding-left: 1rem; /* ← Agrega esto */
+      padding-right: 1rem; /* ← Agrega esto */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
+    /* .contacto {
+  border: 1px solid var(--color-muted);
+  box-shadow: 2px 2px 2px var(--color-primary);
+  background: rgba(41, 41, 97, 0);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+ /*  SIN display: flex} */
+ /
+
+
+    .tags-technologies{
+      margin-top: 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      border-top: 2px solid #585a5a4d;
+      padding-top: 16px;
+      
+    }
+
+.tags-technologies span, .tags-about span {
+  background: rgba(63, 62, 62, 0.192);
+  
+  
+  color: var(--color-muted);
+  padding: 0.5rem 1.2rem;
+  margin-inline: 0.5rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+
+
+.tags-about{
+  padding-block: 20px;
+  /* border: 1px solid green; */
+  height: fit-content;
+  padding-block: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tags-about span{
+  font-size: 1.4rem;
+  line-height: 1.2rem;
+  margin-top: 30px;
+  border: 1px solid var(--color-muted);
+}
 
 /* responsive  */
 
@@ -358,6 +455,9 @@ p, footer{
     
 
   }
+
+
+
 
 }
 
