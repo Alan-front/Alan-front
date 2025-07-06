@@ -202,6 +202,10 @@ function toggleDarkMode() {
     el.classList.toggle('lightModeDivs');
   });  
 
+  document.querySelectorAll('.project').forEach(el => {
+    el.classList.toggle('light-project');
+  });
+
   const titulo = document.getElementById('name');
   titulo.classList.toggle('titulo-mclaro');
 

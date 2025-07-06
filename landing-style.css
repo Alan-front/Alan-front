@@ -13,7 +13,7 @@
 
 
 .lightModeTexts{
-color: var(--color-bg);
+color: var(--color-header);
 }
 
 html, body {
@@ -60,6 +60,13 @@ header {
   position: relative; 
 }
 
+.container-div{
+  border-radius: 8px;
+}
+
+h2#projects_title{
+  margin-left: .5rem;
+}
 
 .hero-content {
   max-width: 800px;
@@ -179,6 +186,7 @@ main {
 
 section {
   margin-bottom: 2rem;
+  
 }
 
 h2 {
@@ -254,6 +262,19 @@ h3{
 a {
   color: var(--color-primary);
   text-decoration: none;
+}
+
+.project.light-project{
+  background: linear-gradient(135deg, #fdfeff, #e9ecf1ea) !important;
+
+  
+  backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.project.light-project:hover{
+  background: #38bdf8;
 }
 
 footer {
