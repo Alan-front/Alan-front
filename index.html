@@ -43,15 +43,15 @@
 
       <div class="tags-about reveal">
             
-            <span>Java</span>
-            <span>MySQL </span>
-            <span>Bootstrap</span>
-            <span>Vue3</span><br>
-            <span>CSS</span><br>
-            <span>JavaScript</span>
-            <span>PHP</span>
-            <span>Figma</span>
-            <span>Laravel</span>
+            <span class="tech-tags">Java</span>
+            <span class="tech-tags">MySQL </span>
+            <span class="tech-tags">Bootstrap</span>
+            <span class="tech-tags">Vue3</span><br>
+            <span class="tech-tags">CSS</span><br>
+            <span class="tech-tags">JavaScript</span>
+            <span class="tech-tags">PHP</span>
+            <span class="tech-tags">Figma</span>
+            <span class="tech-tags">Laravel</span>
             
           </div>
     </section>
@@ -204,6 +204,16 @@ function toggleDarkMode() {
 
   const titulo = document.getElementById('name');
   titulo.classList.toggle('titulo-mclaro');
+
+  const about = document.getElementById('about_title');
+  about.classList.toggle('titulo-mclaro');
+
+  const aboutText = document.getElementById('about_text');
+  aboutText.classList.toggle('titulo-mclaro');
+
+  document.querySelectorAll('.tech-tags').forEach(el => {
+    el.classList.toggle('light-techs');
+  });
 
   const subtitulo = document.getElementById('header_title');
   subtitulo.classList.toggle('sub-tit-mclaro');
