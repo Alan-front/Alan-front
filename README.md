@@ -1,4 +1,4 @@
-# 👋 ¡Hola, soy Alan!
+# 👋 ¡Hola, soy Alan! 🇪🇸
 
 Soy **desarrollador frontend** apasionado por JavaScript, Vue.js y tecnologías web.  
 Me encanta crear interfaces con **animaciones fluidas** e interactividad que sorprenden y mejoran la experiencia del usuario.
@@ -30,4 +30,66 @@ Puedes contactarme por aquí.
 
 ---
 
-¡Gracias por visitar mi perfil! 🚀
+# 👋 Salut, je suis Alan ! 🇫🇷
+
+Je suis **développeur frontend**, passionné par JavaScript, Vue.js et les technologies web.  
+J’adore créer des interfaces avec **des animations fluides** et une interactivité qui surprennent et améliorent l'expérience utilisateur.
+
+---
+
+## À propos de moi
+
+- J'ai travaillé sur des systèmes pour le secteur du bâtiment, et maintenant je me concentre sur des **générateurs vidéo et d'animations**.  
+- Ma spécialité est de créer des générateurs personnalisés avec des bibliothèques comme jsPDF, Chart.js, Anime.js, etc.  
+- J’ai mis en pause mes études en Ingénierie Logicielle avec spécialisation en IA, mais je vais bientôt les reprendre.  
+- J’ai aussi suivi une formation UX/UI pour concevoir des expériences vraiment humaines.  
+- J’aime les discussions qui donnent un coup de boost ☕ — celles qui motivent à innover et créer.
+
+---
+
+## Compétences et technologies
+
+- **Langages :** Java, JavaScript, PHP, CSS, SQL (MySQL)  
+- **Frameworks & bibliothèques :** Vue.js  
+- **Autres compétences :** Animations, UI/UX, interactivité, générateurs personnalisés  
+
+---
+
+## Contact
+
+Je suis ouvert aux discussions, collaborations et projets intéressants !  
+N'hésitez pas à me contacter.
+
+---
+
+# 👋 Hi, I'm Alan! 🇬🇧
+
+I'm a **frontend developer** passionate about JavaScript, Vue.js, and web technologies.  
+I love crafting interfaces with **smooth animations** and interactivity that delight users.
+
+---
+
+## About Me
+
+- I've worked on systems for construction companies and now focus on **video and animation generators**.  
+- I specialize in building custom generators using libraries like jsPDF, Chart.js, Anime.js, and animation tools.  
+- I'm currently on a break from my Software Engineering degree with an AI specialization, but I’ll resume soon.  
+- I also studied UX/UI to design experiences that really connect with people.  
+- I enjoy conversations that feel like a shot of caffeine ☕ — the kind that inspire creativity and progress.
+
+---
+
+## Skills & Technologies
+
+- **Languages:** Java, JavaScript, PHP, CSS, SQL (MySQL)  
+- **Frameworks & Libraries:** Vue.js  
+- **Other Skills:** Animations, UI/UX, interactivity, custom generators  
+
+---
+
+## Contact
+
+I'm open to talks, collaborations, and exciting projects!  
+Feel free to reach out.
+
+---
