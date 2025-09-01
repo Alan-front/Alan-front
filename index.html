@@ -43,15 +43,18 @@
 
       <div class="tags-about reveal">
             
-            <span class="tech-tags">Java</span>
-            <span class="tech-tags">MySQL </span>
-            <span class="tech-tags">Bootstrap</span>
-            <span class="tech-tags">Vue3</span><br>
-            <span class="tech-tags">CSS</span><br>
             <span class="tech-tags">JavaScript</span>
-            <span class="tech-tags">PHP</span>
-            <span class="tech-tags">Figma</span>
-            <span class="tech-tags">Laravel</span>
+<span class="tech-tags">Vue3</span>
+<span class="tech-tags">CSS</span>
+<span class="tech-tags">Bootstrap</span>
+<span class="tech-tags">UX UI</span>
+<span class="tech-tags">Figma</span>
+
+<span class="tech-tags">PHP</span>
+<span class="tech-tags">MySQL</span>
+<span class="tech-tags">IA</span>
+<span class="tech-tags">Java</span>
+
             
           </div>
     </section>
@@ -70,6 +73,7 @@
     <div class="tags-technologies">
       <span>Vue3</span>
       <span>PHP</span>
+      <span>IA</span>
       <span>MySQL</span>
       <span>Bootstrap</span>
     </div>
@@ -77,7 +81,7 @@
 </div> 
 
     <!-- 2do card -->
-      <div class="project container-div reveal">
+      <!-- <div class="project container-div reveal">
   <div class="project-content">
     <h3 id="project_2_title" class="modo-texto"></h3>
     <p id="project_2_desc" class="modo-texto">Descripción 2do card...</p>
@@ -89,9 +93,11 @@
       <span>Bootstrap</span>
       
       <!-- <span>Prototyping</span> -->
-    </div>
+    <!-- </div>
   </div>
-</div>
+</div> -->
+
+    <!-- 3er card -->
 
 <div class="project container-div reveal">
   <div class="project-content">
@@ -99,10 +105,10 @@
     <p id="project_3_desc" class="modo-texto">Descripción portafolio...</p>
   </div>
   <div class="project-footer">
-    <a id="project_3_link" class="modo-enlace" href="#" target="_blank">Ver los proyectos</a>
+    <a id="project_3_link" class="modo-enlace" href="https://www.behance.net/gallery/219635213/CASO-DE-ESTUDIO-UX-GLASS-CUOTER/modules/1341616679" target="_blank">Ver los proyectos</a>
     <div class="tags-technologies">
-      <span>Vue3</span>
-      <span>Laravel</span>
+      <span>Figma</span>
+      <!-- <span>Laravel</span> -->
       <!-- <span>MongoDB</span> -->
     </div>
   </div>
@@ -127,7 +133,7 @@
   </p>
 
   <p>
-    <a href="" target="_blank" class="modo-texto">
+    <a href="https://www.linkedin.com/in/alan-p-88b990275/" target="_blank" class="modo-texto">
       <i class="fab fa-linkedin"></i>&nbsp;Perfil
     </a>
   </p>
@@ -171,9 +177,15 @@ async function setLanguage(lang) {
     document.getElementById('project_1_title').textContent = data.project_1_title;
     document.getElementById('project_1_desc').textContent = data.project_1_desc;
     document.getElementById('project_1_link').textContent = data.project_1_link;
-    document.getElementById('project_2_title').textContent = data.project_2_title;
-    document.getElementById('project_2_desc').textContent = data.project_2_desc;
-    document.getElementById('project_2_link').textContent = data.project_2_link;
+    
+    // project_2 está comentado - verificar si existen los elementos antes de asignar
+    const project2Title = document.getElementById('project_2_title');
+    const project2Desc = document.getElementById('project_2_desc');
+    const project2Link = document.getElementById('project_2_link');
+    if (project2Title) project2Title.textContent = data.project_2_title;
+    if (project2Desc) project2Desc.textContent = data.project_2_desc;
+    if (project2Link) project2Link.textContent = data.project_2_link;
+    
     document.getElementById('project_3_title').textContent = data.project_3_title;
     document.getElementById('project_3_desc').textContent = data.project_3_desc;
     document.getElementById('project_3_link').textContent = data.project_3_link;

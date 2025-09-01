@@ -275,6 +275,9 @@ a {
 
 .project.light-project:hover{
   background: #38bdf8;
+  background:linear-gradient(135deg, rgba(255, 255, 255, 0.952) 0%, rgba(229, 240, 253, 0.918) 100%) !important;
+    box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.226),
+    -2px -8px 32px rgba(255, 255, 255, 0.548);  
 }
 
 footer {
