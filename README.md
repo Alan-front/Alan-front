@@ -1,6 +1,6 @@
 # 👋 ¡Hola, soy Alan!
 
-Soy **desarrollador frontend** apasionado por JavaScript, Vue.js y tecnologías web.  
+Soy **desarrollador frontend** actualmente trabajo con JavaScript, Vue.js y otras tecnologías web.  
 Me encanta crear interfaces con **animaciones fluidas** e interactividad que sorprenden y mejoran la experiencia del usuario.
 
 ---
