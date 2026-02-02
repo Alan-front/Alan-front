@@ -1,33 +1,21 @@
-# 👋 ¡Hola, soy Alan!
-
-Soy **desarrollador frontend** actualmente trabajo con JavaScript, Vue.js y otras tecnologías web.  
-Me encanta crear interfaces con **animaciones fluidas** e interactividad que sorprenden y mejoran la experiencia del usuario.
-
+# Hello, I'm Alan!
+I'm a **frontend developer** currently working with JavaScript, Vue.js and other web technologies.  
+I love creating interfaces with **smooth animations** and interactivity that surprise and improve user experience.
 ---
-
-## Sobre mí
-
-- He trabajado en sistemas para constructoras, y ahora estoy enfocado en proyectos relacionados con **generadores de video y animaciones**.  
-- Mi especialidad es crear generadores personalizados usando librerías como jsPDF, Chart.js, Anime.js y otras herramientas para animaciones.  
-- Actualmente tengo en pausa la carrera de Ingeniería de Software con especialización en Inteligencia Artificial, pero pronto la retomaré.  
-- También me he formado en UX/UI para diseñar experiencias que realmente conecten con las personas.  
-- Me gustan las conversaciones que se sienten como una dosis de cafeína ☕ — esas que motivan a seguir adelante y crear cosas nuevas.
-
+## About me
+- I have worked on systems for construction companies, and now I'm focused on projects related to **video generators and animations**.  
+- My specialty is creating custom generators using libraries like jsPDF, Chart.js, Anime.js and other tools for animations.  
+- I currently have my Software Engineering degree with specialization in Artificial Intelligence on pause, but I will resume it soon.  
+- I have also trained in UX/UI to design experiences that truly connect with people.  
+- I like conversations that feel like a dose of caffeine — those that motivate you to keep going and create new things.
 ---
-
-## Tecnologías y habilidades
-
-- **Lenguajes:** Java, JavaScript, PHP, CSS, SQL (MySQL)  
-- **Frameworks y librerías:** Vue.js  
-- **Otras habilidades:** Animaciones, UI/UX, interactividad, generadores personalizados  
-
+## Technologies and skills
+- **Languages:** Java, JavaScript, PHP, CSS, SQL (MySQL)  
+- **Frameworks and libraries:** Vue.js  
+- **Other skills:** Animations, UI/UX, interactivity, custom generators  
 ---
-
-## Contacto
-
-¡Estoy abierto a charlas, colaboraciones y proyectos interesantes!  
-Puedes contactarme por aquí.
-
+## Contact
+I'm open to conversations, collaborations and interesting projects!  
+You can contact me here.
 ---
-
-¡Gracias por visitar mi perfil! 🚀
+Thank you for visiting my profile!
