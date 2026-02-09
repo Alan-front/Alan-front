@@ -3,7 +3,7 @@
   "header_title": "Développeur Fullstack & UX",
   "header_subtitle": "Créateur d’outils numériques, mailing pour artistes et solutions web efficaces",
   "about_title": "À propos de moi",
-  "about_text": "Développeur frontend en formation (étudiant en ingénierie logicielle). J’ai créé des systèmes de devis pour des entreprises de construction, des outils d’apprentissage des langues et des générateurs de graphiques. Certifié en UX par Google. J’utilise Vue 3, PHP, SQL, Bootstrap et Figma. J’ai travaillé dans un autre domaine où j’ai appris la valeur de l’engagement et du temps. Je me sens prêt à contribuer et à apprendre, et je serai très reconnaissant si vous me donnez l’opportunité d’évoluer dans cette industrie.",
+  "about_text": "Développeur frontend. J’ai créé des systèmes de devis pour des entreprises de construction, des outils d’apprentissage des langues et des générateurs de graphiques. Certifié en UX par Google. J’utilise Vue 3, PHP, SQL, Bootstrap et Figma. J’ai travaillé dans un autre domaine où j’ai appris la valeur de l’engagement et du temps. Je me sens prêt à contribuer et à apprendre, et je serai très reconnaissant si vous me donnez l’opportunité d’évoluer dans cette industrie.",
   "projects_title": "Projets",
   "project_1_title": "Echo",
 "project_1_desc": "Application web pour mailing avec intégration IA pour l'analyse des réponses et l'attribution de tâches basée sur cela.",
@@ -23,3 +23,4 @@
   "light_mode_text": "☀️ Mode clair",
   "dark_mode_text": "🌙 Mode sombre"
 }
+
