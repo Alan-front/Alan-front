@@ -3,7 +3,7 @@
   "header_title": "Fullstack & UX Developer",
   "header_subtitle": "Creator of digital tools, mailing for artists and effective web solutions",
   "about_title": "About me",
-  "about_text": "Frontend developer in training (Software Engineering student). I’ve built quotation systems for construction companies, language teaching tools, and chart generators. UX certified by Google. I use Vue 3, PHP, SQL, Bootstrap, and Figma. I worked in another field where I learned the value of commitment and time. I feel ready to contribute and grow, and I’d be very grateful for the opportunity to develop in this industry.",
+  "about_text": "Frontend developer. I’ve built quotation systems for construction companies, language teaching tools, and chart generators. UX certified by Google. I use Vue 3, PHP, SQL, Bootstrap, and Figma. I worked in another field where I learned the value of commitment and time. I feel ready to contribute and grow, and I’d be very grateful for the opportunity to develop in this industry.",
   "projects_title": "Projects",
   "project_1_title": "Echo",
 "project_1_desc": "Web app for mailing with AI integration for response analysis and task assignment based on that.",
@@ -23,3 +23,4 @@
   "light_mode_text": "☀️ Light mode",
   "dark_mode_text": "🌙 Dark mode"
 }
+
