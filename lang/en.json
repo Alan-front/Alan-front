@@ -8,9 +8,9 @@
   "project_1_title": "Echo",
   "project_1_desc": "Web app for mailing with AI integration for response analysis and task assignment based on that.",
   "project_1_link": "View code",
-  "project_2_title": "Loop Video Generator App",
-  "project_2_desc": "Online tool to generate loop animation videos.",
-  "project_2_link": "View the code",
+  "project_2_title": "Chord GIF Generator",
+"project_2_desc": "Web tool to generate animated chord GIFs synced to BPM. Perfect for creating chord overlays for backing track videos without manual editing.",
+"project_2_link": "View code",
 
   "project_3_title": "Desktop App Prototype",
   "project_3_desc": "Glass quoter prototype, App for glazing contractors.",

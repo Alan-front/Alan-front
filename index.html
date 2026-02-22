@@ -1,306 +1,366 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="landing-style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="landing-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-  <meta property="og:title" content="Alan Perez - Desarrollador Fullstack & UX">
-<meta property="og:description" content="Portafolio de desarrollador Fullstack. Proyectos, prototipos y soluciones web profesionales.">
+    <meta
+      property="og:title"
+      content="Alan Perez - Desarrollador Fullstack & UX"
+    />
+    <meta
+      property="og:description"
+      content="Portafolio de desarrollador Fullstack. Proyectos, prototipos y soluciones web profesionales."
+    />
 
-<meta property="og:image" content="https://alan-front.github.io/Alan-front/img/alan-front.png">
-<meta property="og:url" content="https://alan-front.github.io/Alan-front/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Alan Perez - Desarrollador Fullstack & UX">
-<meta name="twitter:description" content="Portafolio de desarrollador Fullstack. Proyectos, prototipos y soluciones web profesionales.">
-<meta name="twitter:image" content="https://alan-front.github.io/Alan-front/img/alan-front.png">
+    <meta
+      property="og:image"
+      content="https://alan-front.github.io/Alan-front/img/alan-front.png"
+    />
+    <meta
+      property="og:url"
+      content="https://alan-front.github.io/Alan-front/"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Alan Perez - Desarrollador Fullstack & UX"
+    />
+    <meta
+      name="twitter:description"
+      content="Portafolio de desarrollador Fullstack. Proyectos, prototipos y soluciones web profesionales."
+    />
+    <meta
+      name="twitter:image"
+      content="https://alan-front.github.io/Alan-front/img/alan-front.png"
+    />
 
+    <link rel="icon" href="img/alan-front.png" type="image/x-icon" />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" href="img/alan-front.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title id="page_title">Alan | Desarrollador Fullstack & UX</title>
+    <style></style>
+  </head>
+  <body class="container-div">
+    <header class="container-div">
+      <div class="hero-content">
+        <h1 id="name" class="modo-texto reveal">Alan Perez</h1>
+        <h1 id="header_title" class="modo-texto reveal">
+          — Desarrollador Fullstack & UX
+        </h1>
+        <p id="header_subtitle" class="modo-texto reveal">
+          Creador de herramientas digitales, mailing para artistas y soluciones
+          web efectivas
+        </p>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+        <div class="botones-idiomas litContainer">
+          <button class="btn-lang" onclick="setLanguage('es')">ES</button>
+          <button class="btn-lang" onclick="setLanguage('en')">EN</button>
+          <button class="btn-lang" onclick="setLanguage('fr')">FR</button>
+        </div>
+      </div>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
-  <title id="page_title">Alan | Desarrollador Fullstack & UX</title>
-  <style>
-   
-  </style>
-</head>
-<body class="container-div">
+      <div class="scroll-indicator"></div>
+    </header>
 
-<header class="container-div">
-  <div class="hero-content">
-    <h1 id="name" class="modo-texto reveal">Alan Perez</h1>
-    <h1 id="header_title" class="modo-texto reveal">— Desarrollador Fullstack & UX</h1>
-    <p id="header_subtitle" class="modo-texto reveal">Creador de herramientas digitales, mailing para artistas y soluciones web efectivas</p>
-    
-    <div class="botones-idiomas litContainer">
-      <button class="btn-lang" onclick="setLanguage('es')">ES</button>
-      <button class="btn-lang" onclick="setLanguage('en')">EN</button>
-      <button class="btn-lang" onclick="setLanguage('fr')">FR</button>
-    </div>
-  </div>
-  
-  <div class="scroll-indicator"></div>
-</header>
+    <main>
+      <section class="about-me reveal">
+        <h2 id="about_title" class="modo-texto reveal">Sobre mí</h2>
+        <p id="about_text" class="modo-texto reveal">Texto sobre mí...</p>
 
-  <main>
-    <section class="about-me reveal">
-      <h2 id="about_title" class="modo-texto reveal">Sobre mí</h2>
-      <p id="about_text" class="modo-texto reveal">Texto sobre mí...</p>
+        <div class="tags-about reveal">
+          <span class="tech-tags">JavaScript</span>
+          <span class="tech-tags">Vue3</span>
+          <span class="tech-tags">CSS</span>
+          <span class="tech-tags">Bootstrap</span>
+          <span class="tech-tags">UX UI</span>
+          <span class="tech-tags">Figma</span>
 
-      <div class="tags-about reveal">
-            
-            <span class="tech-tags">JavaScript</span>
-<span class="tech-tags">Vue3</span>
-<span class="tech-tags">CSS</span>
-<span class="tech-tags">Bootstrap</span>
-<span class="tech-tags">UX UI</span>
-<span class="tech-tags">Figma</span>
+          <span class="tech-tags">PHP</span>
+          <span class="tech-tags">MySQL</span>
+          <span class="tech-tags">IA</span>
+          <span class="tech-tags">Tailwind</span>
+        </div>
+      </section>
 
-<span class="tech-tags">PHP</span>
-<span class="tech-tags">MySQL</span>
-<span class="tech-tags">IA</span>
-<span class="tech-tags">Java</span>
+      <section class="container-div reveal">
+        <h2 id="projects_title" class="modo-texto">Proyectos</h2>
 
-            
+        <div class="project container-div">
+          <div class="project-content">
+            <h3 id="project_1_title" class="modo-texto">App Mailing IA</h3>
+            <p id="project_1_desc" class="modo-texto">
+              Descripción app mailing...
+            </p>
           </div>
-    </section>
+          <div class="project-footer">
+            <a
+              id="project_1_link"
+              class="modo-enlace"
+              href="https://github.com/Alan-front/echo-mailer"
+              target="_blank"
+              >Ver el código</a
+            >
+            <div class="tags-technologies">
+              <span>Vue3</span>
+              <span>PHP</span>
+              <span>IA</span>
+              <span>MySQL</span>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
 
-    <section class="container-div reveal">
-      <h2 id="projects_title" class="modo-texto">Proyectos</h2>
-      
-      
-<div class="project container-div">
-  <div class="project-content">
-    <h3 id="project_1_title" class="modo-texto">App Mailing IA</h3>
-    <p id="project_1_desc" class="modo-texto">Descripción app mailing...</p>
-  </div>
-  <div class="project-footer">
-    <a id="project_1_link" class="modo-enlace" href="https://github.com/Alan-front/echo-mailer" target="_blank">Ver el código</a>
-    <div class="tags-technologies">
-      <span>Vue3</span>
-      <span>PHP</span>
-      <span>IA</span>
-      <span>MySQL</span>
-      <span>Bootstrap</span>
-    </div>
-  </div>
-</div> 
+        <!-- 2do card -->
+        <div class="project container-div reveal">
+          <div class="project-content">
+            <h3 id="project_2_title" class="modo-texto"></h3>
+            <p id="project_2_desc" class="modo-texto"></p>
+          </div>
+          <div class="project-footer">
+            <a
+              id="video"
+              class="modo-enlace"
+              href="https://www.youtube.com/watch?v=PreWyY1h-YA"
+              target="_blank"
+              ><i class="fa-solid fa-video"></i> Video</a
+            >
+            <div class="tags-technologies">
+              <span>JavaScript</span>
+              <span>html2canvas</span>
+              <span>JSZip</span>
+              <span>GIF.js</span>
+            </div>
+          </div>
+        </div>
 
-    <!-- 2do card -->
-      <!-- <div class="project container-div reveal">
-  <div class="project-content">
-    <h3 id="project_2_title" class="modo-texto"></h3>
-    <p id="project_2_desc" class="modo-texto">Descripción 2do card...</p>
-  </div>
-  <div class="project-footer">
-    <a id="project_2_link" class="modo-enlace" href="#" target="_blank">Ver los proyectos</a>
-    <div class="tags-technologies">
-      <span>JavaScript</span>
-      <span>Bootstrap</span>
-      
-      <!-- <span>Prototyping</span> -->
-    <!-- </div>
-  </div>
-</div> -->
+        <!-- 3er card -->
 
-    <!-- 3er card -->
+        <div class="project container-div reveal">
+          <div class="project-content">
+            <h3 id="project_3_title" class="modo-texto"></h3>
+            <p id="project_3_desc" class="modo-texto"></p>
+          </div>
+          <div class="project-footer">
+            <a
+              id="project_3_link"
+              class="modo-enlace"
+              href="https://www.behance.net/gallery/219635213/CASO-DE-ESTUDIO-UX-GLASS-CUOTER/modules/1341616679"
+              target="_blank"
+              >Caso de estudio</a
+            >
+            <div class="tags-technologies">
+              <span>Figma</span>
+              <!-- <span>Laravel</span> -->
+              <!-- <span>MongoDB</span> -->
+            </div>
+          </div>
+        </div>
+      </section>
 
-<div class="project container-div reveal">
-  <div class="project-content">
-    <h3 id="project_3_title" class="modo-texto"></h3>
-    <p id="project_3_desc" class="modo-texto"></p>
-  </div>
-  <div class="project-footer">
-    <a id="project_3_link" class="modo-enlace" href="https://www.behance.net/gallery/219635213/CASO-DE-ESTUDIO-UX-GLASS-CUOTER/modules/1341616679" target="_blank">Caso de estudio</a>
-    <div class="tags-technologies">
-      <span>Figma</span>
-      <!-- <span>Laravel</span> -->
-      <!-- <span>MongoDB</span> -->
-    </div>
-  </div>
-</div>
+      <section class="project contacto container-div reveal">
+        <h2 id="contact_title" class="modo-texto">Contacto</h2>
 
+        <p>
+          <a
+            href="https://github.com/Alan-front"
+            class="modo-texto"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>&nbsp;Alan-front
+          </a>
+        </p>
 
-    </section>
+        <p>
+          <a
+            href="https://www.behance.net/amiguelperez"
+            class="modo-texto"
+            target="_blank"
+          >
+            <i class="fab fa-behance"></i>&nbsp;amiguelperez
+          </a>
+        </p>
 
-<section class="project contacto container-div reveal">
-  <h2 id="contact_title" class="modo-texto">Contacto</h2>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/alan-p-88b990275/"
+            target="_blank"
+            class="modo-texto"
+          >
+            <i class="fab fa-linkedin"></i>&nbsp;Perfil
+          </a>
+        </p>
+      </section>
+    </main>
 
-  <p>
-    <a href="https://github.com/Alan-front" class="modo-texto" target="_blank">
-      <i class="fab fa-github"></i>&nbsp;Alan-front
-    </a>
-  </p>
-
-  <p>
-    <a href="https://www.behance.net/amiguelperez" class="modo-texto" target="_blank">
-      <i class="fab fa-behance"></i>&nbsp;amiguelperez
-    </a>
-  </p>
-
-  <p>
-    <a href="https://www.linkedin.com/in/alan-p-88b990275/" target="_blank" class="modo-texto">
-      <i class="fab fa-linkedin"></i>&nbsp;Perfil
-    </a>
-  </p>
-</section>
-
-
-
-  </main>
-
-  <div class="modeDark">
-    <button id="toggleDarkMode" class="btn-dark" onclick="toggleDarkMode()" aria-label="Alternar modo oscuro">
-    <!-- <span id="dark_mode_text"></span>
+    <div class="modeDark">
+      <button
+        id="toggleDarkMode"
+        class="btn-dark"
+        onclick="toggleDarkMode()"
+        aria-label="Alternar modo oscuro"
+      >
+        <!-- <span id="dark_mode_text"></span>
   <span id="light_mode_text" style="display: none;"></span> -->
-  </button>
-  </div>
+      </button>
+    </div>
 
-  <a href="AQUI EL SITIO">
-    <div class="avatar" id="avatar" style="cursor: pointer;">
-    <div class="light-dot"></div>
-    <div class="light-dot"></div>
-    <div class="light-dot"></div>
-    <div class="light-dot"></div>
-</div>
-  </a>
+    <a href="AQUI EL SITIO">
+      <div class="avatar" id="avatar" style="cursor: pointer">
+        <div class="light-dot"></div>
+        <div class="light-dot"></div>
+        <div class="light-dot"></div>
+        <div class="light-dot"></div>
+      </div>
+    </a>
 
-<footer>
-  © <span id="year"></span> Alan. <span id="footer"></span>
-</footer>
+    <footer>© <span id="year"></span> Alan. <span id="footer"></span></footer>
 
+    <script>
+      let currentLanguageData = {};
 
+      async function setLanguage(lang) {
+        try {
+          const res = await fetch(`lang/${lang}.json`);
+          const data = await res.json();
 
+          currentLanguageData = data;
 
-  <script>
-   let currentLanguageData = {};
+          document.title = data.title;
+          document.getElementById("page_title").textContent = data.title;
+          document.getElementById("header_title").textContent =
+            data.header_title;
+          document.getElementById("header_subtitle").textContent =
+            data.header_subtitle;
+          document.getElementById("about_title").textContent = data.about_title;
+          document.getElementById("about_text").textContent = data.about_text;
+          document.getElementById("projects_title").textContent =
+            data.projects_title;
+          document.getElementById("project_1_title").textContent =
+            data.project_1_title;
+          document.getElementById("project_1_desc").textContent =
+            data.project_1_desc;
+          document.getElementById("project_1_link").textContent =
+            data.project_1_link;
 
-async function setLanguage(lang) {
-  try {
-    const res = await fetch(`lang/${lang}.json`);
-    const data = await res.json();
-    
-    currentLanguageData = data;
+          // project_2 está comentado - verificar si existen los elementos antes de asignar
+          const project2Title = document.getElementById("project_2_title");
+          const project2Desc = document.getElementById("project_2_desc");
+          const project2Link = document.getElementById("project_2_link");
+          if (project2Title) project2Title.textContent = data.project_2_title;
+          if (project2Desc) project2Desc.textContent = data.project_2_desc;
+          if (project2Link) project2Link.textContent = data.project_2_link;
 
-    document.title = data.title;
-    document.getElementById('page_title').textContent = data.title;
-    document.getElementById('header_title').textContent = data.header_title;
-    document.getElementById('header_subtitle').textContent = data.header_subtitle;
-    document.getElementById('about_title').textContent = data.about_title;
-    document.getElementById('about_text').textContent = data.about_text;
-    document.getElementById('projects_title').textContent = data.projects_title;
-    document.getElementById('project_1_title').textContent = data.project_1_title;
-    document.getElementById('project_1_desc').textContent = data.project_1_desc;
-    document.getElementById('project_1_link').textContent = data.project_1_link;
-    
-    // project_2 está comentado - verificar si existen los elementos antes de asignar
-    const project2Title = document.getElementById('project_2_title');
-    const project2Desc = document.getElementById('project_2_desc');
-    const project2Link = document.getElementById('project_2_link');
-    if (project2Title) project2Title.textContent = data.project_2_title;
-    if (project2Desc) project2Desc.textContent = data.project_2_desc;
-    if (project2Link) project2Link.textContent = data.project_2_link;
-    
-    document.getElementById('project_3_title').textContent = data.project_3_title;
-    document.getElementById('project_3_desc').textContent = data.project_3_desc;
-    document.getElementById('project_3_link').textContent = data.project_3_link;
-    document.getElementById('contact_title').textContent = data.contact_title;
-    document.getElementById('footer').textContent = data.footer;
-    
-    updateButtonText();
-    
-  } catch (error) {
-    console.error('Error loading language:', error);
-  }
-}
+          document.getElementById("project_3_title").textContent =
+            data.project_3_title;
+          document.getElementById("project_3_desc").textContent =
+            data.project_3_desc;
+          document.getElementById("project_3_link").textContent =
+            data.project_3_link;
+          document.getElementById("contact_title").textContent =
+            data.contact_title;
+          document.getElementById("footer").textContent = data.footer;
 
-function updateButtonText() {
-  const toggleBtn = document.getElementById('toggleDarkMode');
-  
-  if (toggleBtn.classList.contains('btn-light')) {
-    toggleBtn.textContent = currentLanguageData.dark_mode_text;
-  } else {
-    toggleBtn.textContent = currentLanguageData.light_mode_text;
-  }
-}
-
-function toggleDarkMode() {
-  document.querySelectorAll('.container-div').forEach(el => {
-    el.classList.toggle('lightModeDivs');
-  });  
-
-  document.querySelectorAll('.project').forEach(el => {
-    el.classList.toggle('light-project');
-  });
-
-  const titulo = document.getElementById('name');
-  titulo.classList.toggle('titulo-mclaro');
-
-  const about = document.getElementById('about_title');
-  about.classList.toggle('titulo-mclaro');
-
-  const aboutText = document.getElementById('about_text');
-  aboutText.classList.toggle('titulo-mclaro');
-
-  document.querySelectorAll('.tech-tags').forEach(el => {
-    el.classList.toggle('light-techs');
-  });
-
-  const subtitulo = document.getElementById('header_title');
-  subtitulo.classList.toggle('sub-tit-mclaro');
-
-  const descripcion = document.getElementById('header_subtitle');
-  descripcion.classList.toggle('descrip-mclaro');
-  
-  document.querySelectorAll('.modo-texto').forEach(el => {
-    el.classList.toggle('lightModeTexts');
-  });
-
-  const scrollAnim = document.querySelector(".scroll-indicator");
-  scrollAnim.classList.toggle('indicator-mclaro');
-
-  document.querySelectorAll('.btn-lang').forEach(el => {
-    el.classList.toggle('light-btn');
-  });
-
-  document.querySelectorAll('.modo-enlace').forEach(el => {
-    el.classList.toggle('light-enlace');
-  });
-
-  const toggleBtn = document.getElementById('toggleDarkMode');
-  toggleBtn.classList.toggle('btn-light');
-
-  updateButtonText();
-}
-
-setLanguage('es');
-
-document.getElementById('year').textContent = new Date().getFullYear();
-
-  </script>
-
-
-
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
+          updateButtonText();
+        } catch (error) {
+          console.error("Error loading language:", error);
+        }
       }
-    });
-  }, { threshold: 0.1 });
 
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
+      function updateButtonText() {
+        const toggleBtn = document.getElementById("toggleDarkMode");
 
+        if (toggleBtn.classList.contains("btn-light")) {
+          toggleBtn.textContent = currentLanguageData.dark_mode_text;
+        } else {
+          toggleBtn.textContent = currentLanguageData.light_mode_text;
+        }
+      }
 
+      function toggleDarkMode() {
+        document.querySelectorAll(".container-div").forEach((el) => {
+          el.classList.toggle("lightModeDivs");
+        });
 
+        document.querySelectorAll(".project").forEach((el) => {
+          el.classList.toggle("light-project");
+        });
 
-</body>
+        const titulo = document.getElementById("name");
+        titulo.classList.toggle("titulo-mclaro");
+
+        const about = document.getElementById("about_title");
+        about.classList.toggle("titulo-mclaro");
+
+        const aboutText = document.getElementById("about_text");
+        aboutText.classList.toggle("titulo-mclaro");
+
+        document.querySelectorAll(".tech-tags").forEach((el) => {
+          el.classList.toggle("light-techs");
+        });
+
+        const subtitulo = document.getElementById("header_title");
+        subtitulo.classList.toggle("sub-tit-mclaro");
+
+        const descripcion = document.getElementById("header_subtitle");
+        descripcion.classList.toggle("descrip-mclaro");
+
+        document.querySelectorAll(".modo-texto").forEach((el) => {
+          el.classList.toggle("lightModeTexts");
+        });
+
+        const scrollAnim = document.querySelector(".scroll-indicator");
+        scrollAnim.classList.toggle("indicator-mclaro");
+
+        document.querySelectorAll(".btn-lang").forEach((el) => {
+          el.classList.toggle("light-btn");
+        });
+
+        document.querySelectorAll(".modo-enlace").forEach((el) => {
+          el.classList.toggle("light-enlace");
+        });
+
+        const toggleBtn = document.getElementById("toggleDarkMode");
+        toggleBtn.classList.toggle("btn-light");
+
+        updateButtonText();
+      }
+
+      setLanguage("es");
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
 </html>

@@ -8,9 +8,7 @@
   "project_1_title": "Echo",
   "project_1_desc": "App web para mailing con integración de IA para análisis de respuestas y asignación de tareas según eso.",
   "project_1_link": "Ver el código",
-  "project_2_title": "App generador de vídeo loop",
-  "project_2_desc": "Utilidad en línea para generar vídeos de animación en bucle.",
-  "project_2_link": "Ver el código",
+ 
   "project_3_title": "Prototipo de App de escritorio",
   "project_3_desc": "Prototipo de Glass cuoter, App para contratistas vidrieros.",
   "project_3_link": "Estudio de caso",
@@ -20,5 +18,10 @@
   "linkedin": "Perfil",
   "footer": "Todos los derechos reservados.",
   "light_mode_text": "☀️ Modo claro",
-  "dark_mode_text": "🌙 Modo oscuro"
+  "dark_mode_text": "🌙 Modo oscuro",
+
+
+  "project_2_title": "Chord GIF Generator",
+"project_2_desc": "Herramienta web para generar GIFs animados de acordes sincronizados al BPM. Ideal para crear overlays de acordes para videos de backing tracks sin edición manual.",
+"project_2_link": "Ver el código"
 }

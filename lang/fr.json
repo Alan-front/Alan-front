@@ -8,9 +8,9 @@
   "project_1_title": "Echo",
   "project_1_desc": "Application web pour mailing avec intégration IA pour l'analyse des réponses et l'attribution de tâches basée sur cela.",
   "project_1_link": "Voir le code",
-  "project_2_title": "App Générateur de Vidéo en Boucle",
-  "project_2_desc": "Outil en ligne pour générer des vidéos d'animation en boucle.",
-  "project_2_link": "Voir le code",
+  "project_2_title": "Chord GIF Generator",
+"project_2_desc": "Outil web pour générer des GIFs animés d'accords synchronisés au BPM. Idéal pour créer des overlays d'accords pour des vidéos de backing tracks sans édition manuelle.",
+"project_2_link": "Voir le code",
 
   "project_3_title": "Prototype d'Application de bureau",
   "project_3_desc": "Prototype de Glass quoter, Application pour entrepreneurs verriers.",
